@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap');
+
+.btn{
+  cursor: pointer;
+}
+
+.ion-content {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container-valendo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row;
+  margin-bottom: 5px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container-time1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-left: 60px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container-time1 p {
+  text-align: center;
+  flex-flow: row;
+  font-size: 30px;
+}
+
+.container-time2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-left:120px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container-time2 p {
+  text-align: center;
+  flex-flow: row;
+  font-size: 30px;
+}
+
+.partida {
+  font-size: 25px;
+  margin-left: 40px;
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid;
+  width: 320px;
+  border-color: black;
+}
+

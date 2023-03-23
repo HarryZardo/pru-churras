@@ -1,17 +1,54 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 2
+      TRUCO!
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+   <h1>Valendo: {{valendo}}</h1>
+  <div class="container-valendo">
+    <ion-button color="dark">1</ion-button>
+    <ion-button color="dark" (click) = "mudarValendo3()">3</ion-button>
+    <ion-button color="dark" (click) = "mudarValendo6()">6</ion-button>
+    <ion-button color="dark" (click) = "mudarValendo9()">9</ion-button>
+    <ion-button color="dark" (click) = "mudarValendo12()">12</ion-button>
+  </div>
+<ion-grid>
+<ion-row>
+  <div class="container-time1">
+  <p>Time1</p>
+  <ion-button color="dark" size="large">+</ion-button>
+  <p>{{pontuacaoTime1}}</p>
+  <ion-button color="dark" size="large">-</ion-button>
+  </div>
 
+  <div class="container-time2">
+  <p>Time2</p>
+  <ion-button color="dark" size="large">+</ion-button>
+  <p>{{pontuacaoTime2}}</p>
+  <ion-button color="dark" size="large">-</ion-button>
+  </div>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row>
+  <div class="partida">
+    <h1>Partidas: </h1>
+    <p>Time 1: </p>
+    <p>{{partidasTime1}}</p>
+    <p>Time 2: </p>
+    <p>{{partidasTime2}}</p>
+  </div>
+</ion-row>
+</ion-grid>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar class="btn" color="dark">
+    <ion-title class="ion-text-center">LIMPAR</ion-title>
+  </ion-toolbar>
+</ion-footer>
