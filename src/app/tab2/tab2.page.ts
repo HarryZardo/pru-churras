@@ -14,6 +14,10 @@ export class Tab2Page {
 
   constructor() {}
 
+  mudarValendo1() {
+    this.valendo = 1;
+  }
+
   mudarValendo3() {
     this.valendo = 3;
   }
@@ -31,7 +35,30 @@ export class Tab2Page {
   }
 
   mudarPontuacaoTime1Mais() {
-    
+    if(this.pontuacaoTime1 <= 11) {
+    this.pontuacaoTime1 = this.valendo + this.pontuacaoTime1;
+    }else(this.pontuacaoTime1 = 0)
   }
 
+  mudarPontuacaoTime1Menos() {
+    if(this.pontuacaoTime1 = 0) {
+    this.pontuacaoTime1 = this.pontuacaoTime1 - this.valendo;
+    }
+  }
+
+  mudarPontuacaoTime2Mais() {
+    if(this.pontuacaoTime2 <= 11) {
+    this.pontuacaoTime2 = this.valendo + this.pontuacaoTime2;
+    }else(this.pontuacaoTime2 = 0)
+  }
+
+  mudarPontuacaoTime2Menos() {
+    if(this.pontuacaoTime2 = 0) {
+    this.pontuacaoTime2 = this.pontuacaoTime2 - this.valendo;
+    }
+  }
+
+  limpar() {
+    
+  }
 }

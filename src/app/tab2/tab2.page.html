@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
    <h1>Valendo: {{valendo}}</h1>
   <div class="container-valendo">
-    <ion-button color="dark">1</ion-button>
+    <ion-button color="dark" (click) = "mudarValendo1()">1</ion-button>
     <ion-button color="dark" (click) = "mudarValendo3()">3</ion-button>
     <ion-button color="dark" (click) = "mudarValendo6()">6</ion-button>
     <ion-button color="dark" (click) = "mudarValendo9()">9</ion-button>
@@ -19,16 +19,16 @@
 <ion-row>
   <div class="container-time1">
   <p>Time1</p>
-  <ion-button color="dark" size="large">+</ion-button>
+  <ion-button color="dark" size="large" (click) = "mudarPontuacaoTime1Mais()">+</ion-button>
   <p>{{pontuacaoTime1}}</p>
-  <ion-button color="dark" size="large">-</ion-button>
+  <ion-button color="dark" size="large" (click) = "mudarPontuacaoTime1Menos()">-</ion-button>
   </div>
 
   <div class="container-time2">
   <p>Time2</p>
-  <ion-button color="dark" size="large">+</ion-button>
+  <ion-button color="dark" size="large" (click) = "mudarPontuacaoTime2Mais()">+</ion-button>
   <p>{{pontuacaoTime2}}</p>
-  <ion-button color="dark" size="large">-</ion-button>
+  <ion-button color="dark" size="large" (click) = "mudarPontuacaoTime2Menos()">-</ion-button>
   </div>
 </ion-row>
 </ion-grid>
