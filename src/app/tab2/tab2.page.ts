@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
+
 export class Tab2Page {
   valendo = 1;
   pontuacaoTime1 = 0;
@@ -58,7 +59,23 @@ export class Tab2Page {
     }
   }
 
+  mudarPartidasTime1() {
+    if(this.pontuacaoTime1 > 12) {
+      this.partidasTime1 = this.partidasTime1 + 1;
+    }
+  }
+
+  mudarPartidasTime2() {
+    if(this.pontuacaoTime2 > 12) {
+      this.partidasTime2 = this.partidasTime2 + 1;
+    }
+  }
+
   limpar() {
-    
+    this.valendo;
+    this.pontuacaoTime1;
+    this.pontuacaoTime2;
+    this.partidasTime1;
+    this.partidasTime2;
   }
 }

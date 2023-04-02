@@ -38,7 +38,7 @@
   <div class="partida">
     <h1>Partidas: </h1>
     <p>Time 1: </p>
-    <p>{{partidasTime1}}</p>
+    <p >{{partidasTime1}}</p>
     <p>Time 2: </p>
     <p>{{partidasTime2}}</p>
   </div>
@@ -49,6 +49,6 @@
 
 <ion-footer>
   <ion-toolbar class="btn" color="dark">
-    <ion-title class="ion-text-center">LIMPAR</ion-title>
+    <ion-title class="ion-text-center" (click) = "limpar()">LIMPAR</ion-title>
   </ion-toolbar>
 </ion-footer>
